@@ -1,0 +1,44 @@
+#sidebar{
+  background-color:#555756;
+}
+#feature{
+  background-color:#f4f8f9;
+  color: #00aff0;
+}
+#clicksection{
+  background-color:#e4eef2;
+}
+.icon{
+  background-color:#2f3136;
+  border-color: #00aff0 !important;
+}
+.icon:hover{
+  background-color:#3f4249;
+}
+.tooltiptext{
+  background-color:#202225;
+  color: #ffffff;
+}
+#wCounter{
+  color: #00aff0;
+}
+#incomeCounter{
+  color: #00aff0;
+}
+#ciastko{
+  background-image:url("../images/skype.png");
+}
+#cheatNotice{
+  color: #7A7B7F;
+}
+.tooltipAchievement{
+  background-color:#202225;
+  color: #ffffff;
+}
+.achievementQuotation{
+  color: #7A7B7F;
+}
+.upgradeTooltip{
+  background-color:#202225;
+  color: #ffffff;
+}

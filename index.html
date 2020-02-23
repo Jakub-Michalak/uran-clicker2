@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <title> Uran Clicker 2</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" id="discord" href="themes/default.css"/>
+  <link rel="stylesheet alternate" type="text/css" id="skype" href="themes/skype.css" />
+  <link rel="stylesheet alternate" type="text/css" id="gadugadu" href="themes/gadugadu.css" />
+  <link rel="stylesheet alternate" type="text/css" id="anime" href="themes/anime.css" />
+  <link rel="stylesheet alternate" type="text/css" id="marcin" href="themes/marcin.css" />
+  <script src="script.js"></script>
+  <script src="libraries/jquery-3.3.1.min.js"></script>
+  <script src="libraries/cheet.js"></script>
+  <script src="libraries/notify.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body onload="loadGame(); autoSave(); changeFeature(option); incomeRefresh(); idleIncome()">
+  <div id="container">
+    <div id="sidebar">
+      <div class="icon" id="icon_upgrades" onclick="option='upgrades'; changeFeature(option)">
+        <span class="tooltiptext">Ulepszenia</span>
+      </div>
+      <div class="icon" id="icon_stats" onclick="option='stats'; changeFeature(option)">
+        <span class="tooltiptext">Statystyki</span>
+      </div>
+      <div class="icon" id="icon_achievements" onclick="option='achievements'; changeFeature(option)">
+        <span class="tooltiptext">Osiągnięcia</span>
+      </div>
+      <div class="icon" id="icon_themes" onclick="option='themes'; changeFeature(option)">
+        <span class="tooltiptext">Motywy</span>
+      </div>
+      <div class="icon" id="icon_saves" onclick="option='saves'; changeFeature(option)">
+        <span class="tooltiptext">Sejwy</span>
+      </div>
+      <div class="icon" id="icon_options" onclick="option='options'; changeFeature(option)">
+        <span class="tooltiptext">Opcje</span>
+      </div>
+      <div class="icon" id="icon_credits" onclick="option='credits'; changeFeature(option)">
+        <span class="tooltiptext">Autorzy</span>
+      </div>
+    </div>
+    <div id="feature">
+
+    </div>
+    <div id="clicksection">
+      <div id="wCounter" ondragstart="return false;">
+        0₩
+      </div>
+      <div id="ciastko" ondragstart="return false;" onclick="klik()"></div>
+      <div id="incomeCounter" ondragstart="return false;">
+        Wysyłasz <span id="idlePower"></span> ₩ na sekundę.<br />
+        Każde kliknięcie wysyła <span id="cursorPower"></span> ₩.
+      </div>
+      <div id="notificationBox">
+          0
+      </div>
+    </div>
+
+  </div>
+  <script>
+	document.addEventListener("touchstart", function() {},false);
+	cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {marcinFlag = 1; $("#theme_marcin").css("visibility", "visible"); var audio = new Audio('sounds/marcin.wav'); audio.play(); notification("Odblokowałeś nowy motyw!","Odblkowałeś nowy motyw!");});
+	cheet('m o t h e r l o d e', function () {grantW(50000);});
+	</script>
+</body>

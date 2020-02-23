@@ -1,0 +1,70 @@
+#sidebar{
+  background-color:#202225;
+}
+#feature{
+  background-color:#2f3136;
+  color: #ffffff;
+}
+#clicksection{
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+.icon{
+  background-color:#2f3136;
+  border-color: #ffffff !important;
+}
+.icon:hover{
+  background-color:#3f4249;
+}
+.tooltiptext{
+  background-color:#202225;
+  color: #ffffff;
+}
+#wCounter{
+  color: #ffffff;
+}
+#incomeCounter{
+  color: #ffffff;
+}
+#ciastko{
+  background-image:url("../images/marcin.png");
+}
+#cheatNotice{
+  color: #7A7B7F;
+}
+.tooltipAchievement{
+  background-color:#202225;
+  color: #ffffff;
+}
+.achievementQuotation{
+  color: #7A7B7F;
+}
+.upgradeTooltip{
+  background-color:#202225;
+  color: #ffffff;
+}
